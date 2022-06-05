@@ -82,7 +82,7 @@ def some(w, p):
 '''
 
         
-def game():
+def solver():
     w = nw[:]
     found = False
     while not found:
@@ -99,3 +99,6 @@ def game():
                 if guess.isnumeric(): best_guess(w, int(guess), v)
                 else: best_guess(w, 10, v)
         found = input("Game over? (press any key and enter to accept): ")
+
+if __name__ == "__main__":
+    solver()
